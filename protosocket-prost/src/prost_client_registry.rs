@@ -16,7 +16,7 @@ impl ClientRegistry {
     pub fn new(runtime: tokio::runtime::Handle) -> Self {
         log::trace!("new client registry");
         Self {
-            max_buffer_length: 4 * (2 << 20),
+            max_buffer_length: 10585829,
             max_queued_outbound_messages: 256,
             runtime,
         }
